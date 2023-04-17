@@ -9,7 +9,11 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/folder/:id',
     component: () => import ('../views/FolderPage.vue')
-  }
+  },
+  {
+    path: "/cards",
+    component: () => import("../views/CardPage.vue")
+  },
 ]
 
 const router = createRouter({
